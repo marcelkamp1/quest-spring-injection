@@ -17,7 +17,7 @@ public class WizardController {
 	
 	@Autowired
 	@Qualifier("wizardRepository")
-    private WizardRepository repository;
+    private WizardDao repository;
 
     @GetMapping("/wizards")
     public String getAll(Model model) {
